@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace WindowsFormsApp1
 {
@@ -10,8 +6,7 @@ namespace WindowsFormsApp1
     {
         public double RealFunctionResult (double x)
         {
-            //return 2 *x*x*x + 0.5;
-            return 3 * x * x;
+            return 5 * x * x;
         }
 
         public List<double> AllfunctionResult(double start, double end, double step)

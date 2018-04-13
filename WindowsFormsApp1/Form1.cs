@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsFormsApp1
 {
@@ -24,8 +19,7 @@ namespace WindowsFormsApp1
             double step = Convert.ToDouble(textBox3.Text);
             double q = Convert.ToDouble(textBox4.Text);
             double w = Convert.ToDouble(textBox5.Text);
-            int iteration = Convert.ToInt32(textBox6.Text);
-
+            
             var realFunction = new RealFunction();
 
             var XsList = Getxs(start, end, step);
@@ -38,7 +32,7 @@ namespace WindowsFormsApp1
             var b = leastSquareMethod.B;
 
             var widrofHoffMethod = new WidrofHoffMethod(q, w, start, end, step);
-            widrofHoffMethod.Teach(iteration);
+            widrofHoffMethod.Teach();
             var W = widrofHoffMethod.W;
             var WHMList = widrofHoffMethod.Result();
 
@@ -51,6 +45,26 @@ namespace WindowsFormsApp1
             foreach (var y in WHMList)
                 dataGridView3.Rows.Add(y);
 
+            
+
+            chart1.ChartAreas[0].AxisX.Minimum = start;
+            chart1.ChartAreas[0].AxisX.Maximum = end;
+            chart1.ChartAreas[0].AxisX.MajorGrid.Interval = step;
+
+            chart1.Series.Add("Original function");
+            chart1.Series.Add("Less square method");
+            chart1.Series.Add("Widroff Hoff Method");
+
+            chart1.Series[0].ChartType = SeriesChartType.Spline;
+            chart1.Series[1].ChartType = SeriesChartType.Spline;
+            chart1.Series[2].ChartType = SeriesChartType.Spline;
+            chart1.Series[0].BorderWidth = 4;
+            chart1.Series[1].BorderWidth = 4;
+            chart1.Series[2].BorderWidth = 4;
+
+            chart1.Series[0].Points.DataBindXY(XsList, realFunctionList);
+            chart1.Series[1].Points.DataBindXY(XsList, LSMList);
+            chart1.Series[2].Points.DataBindXY(XsList, WHMList);                                  
         }
 
         private List<double> Getxs(double start, double end, double step)

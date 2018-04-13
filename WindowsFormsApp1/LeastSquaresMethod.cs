@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
@@ -64,7 +61,6 @@ namespace WindowsFormsApp1
 
         private void GetA()
         {
-            //A = (Lenght * SumXMultiY() - SumXs * SumYs) / (Lenght * SumPowXs() - SumXs * SumXs);
             A = (N * SumXMultiY() - SumXs * SumYs) / (N * SumPowXs() - SumXs * SumXs);
         }
 

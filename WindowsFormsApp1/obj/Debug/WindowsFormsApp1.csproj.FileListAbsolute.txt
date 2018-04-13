@@ -8,3 +8,13 @@ C:\Users\Oleksii_Venherets\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\De
 C:\Users\Oleksii_Venherets\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Oleksii_Venherets\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Oleksii_Venherets\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Oleksii_Venherets\Downloads\l1neyro-master\l1neyro-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

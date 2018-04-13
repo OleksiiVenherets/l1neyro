@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace WindowsFormsApp1
 {
@@ -23,19 +19,15 @@ namespace WindowsFormsApp1
             Step = step;
         }
 
-        public void Teach(int iterationCount)
+        public void Teach()
         {
             var realfunction = new RealFunction();
-            //for (var i = 0; i < iterationCount; i++)
-            //{
-                for (double x = Start; x <= (Start + End) / 2; x += Step)
-                {
-                //double x = Start;
-                    var t = realfunction.RealFunctionResult(x);
-                    FindNextW(t, x);
-                    //x += Step;
-                }
-            //}
+            for (double x = Start; x <= (Start + End) / 2; x += Step)
+            {
+                var t = realfunction.RealFunctionResult(x);
+                FindNextW(t, x);
+            }
+ 
         }
 
         public List<double> Result()
